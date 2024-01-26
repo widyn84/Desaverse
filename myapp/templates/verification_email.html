@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifikasi Email</title>
+</head>
+<body>
+    <table width="100%" style="background-color: #f7f7f7;">
+        <tr>
+            <td align="center">
+                <table width="600" style="background-color: #ffffff; margin: 20px; padding: 20px;">
+                    {% comment %} <tr>
+                        <td align="center">
+                            <img src="https://dev.desaverse.co.id/_nuxt/static/images/logo/desaverse.svg" alt="Logo Website" style="max-width: 200px;">
+                        </td>
+                    </tr> {% endcomment %}
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <h2>Halo {{ user.first_name }} {{user.last_name}}, Selamat Datang di Desaverse!</h2>
+                            <p>Silakan verifikasi alamat email Anda untuk mengaktifkan akun Anda.</p>
+                            <a href="{{ verification_url }}" style="background-color: #007BFF; color: #ffffff; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: inline-block;">Verifikasi Email</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <p>Jika Anda tidak melakukan permintaan ini, Anda bisa mengabaikan email ini.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
